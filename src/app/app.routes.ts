@@ -1,3 +1,5 @@
+//Adapted from
+
 //Importing the angular router
 import { Routes } from '@angular/router';
 

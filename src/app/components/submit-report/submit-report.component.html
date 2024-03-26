@@ -1,1 +1,25 @@
-<p>submit-report works!</p>
+<!-- Adapted from -->
+
+<div class="p-3 mb-2"> 
+    <h1 class="text-center"> Submit Reports</h1>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="addReport" class="form-label">Name of Reports</label>
+        <input type="text" class="form-control" id="addReport"required>
+        </div>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="formFileMultiple" class="form-label">Upload Reports</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+ 
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="inputDate" class="form-label">Submission Date</label>
+        <input type="date" class="form-control" id="inputDate">
+        </div>
+    
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+<button type="submit" class="btn btn-primary mb-3" routerLink="/user">Submit Report</button>
+</div>
+

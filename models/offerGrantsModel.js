@@ -5,11 +5,6 @@ const mongoose = require('mongoose');
 
 const offerGrantsSchema = new mongoose.Schema({
 
-    offerID: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "grantOfferID",
-        required: true,
-    },
     grantName: {
         type: String,
         required: true

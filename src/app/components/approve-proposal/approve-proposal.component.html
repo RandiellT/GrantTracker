@@ -1,1 +1,44 @@
-<p>approve-proposal works!</p>
+<div class="p-3 mb-2"> 
+    <h1 class="text-center">Approve Proposals</h1>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <textarea class="form-control" id="comments" rows="5" placeholder="These proposals are waiting for your decision!" readonly></textarea>
+    </div>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="name" class="form-label">Proposal Name</label>
+        <input type="text" class="form-control" id="name" required>
+        </div>
+    
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="inputOrgName" class="form-label">Submitted By</label>
+        <input type="text" class="form-control" id="inputOrgName" placeholder="Enter the name of the organization who submitted the proposal.">
+    </div>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="inputUsertype" class="form-label">Status</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option2" checked>
+        <label class="form-check-label" for="gridRadios1">Approved</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1">
+        <label class="form-check-label" for="gridRadios2">Disapproved</label>
+        </div>
+    </div>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="comments" class="form-label">Comments</label>
+        <textarea class="form-control" id="comments" rows="5"></textarea>
+    </div>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="inputDate" class="form-label">Submission Date</label>
+        <input type="date" class="form-control" id="inputDate">
+    </div>
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+<button type="submit" class="btn btn-primary mb-3">Submit Decision</button>
+</div>

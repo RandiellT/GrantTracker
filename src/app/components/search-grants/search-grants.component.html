@@ -1,1 +1,59 @@
-<p>search-grants works!</p>
+
+<div class="p-3 mb-2"> 
+    <h1 class="text-center">Search for Grants</h1>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <input type="text" class="form-control" placeholder="Search by Name" aria-describedby="button-addon2">
+
+        <button class="btn btn-primary mb-3" type="button" id="button-addon2" data-bs-toggle="modal" data-bs-target="#searchModal">Button</button>
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#searchModal1">Search All Grants</button>
+    </div>
+
+</div>
+
+<!--Creating modal to display grant search results-->
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="searchModalLabel">Search Results</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        There are no grants by that name.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!--Creating modal to display grant search results-->
+
+<div class="modal fade" id="searchModal1" tabindex="-1" aria-labelledby="searchModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="searchModalLabel1">Search Results</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="list-group">
+                <li class="list-group-item">Grant Offer 1</li>
+                <li class="list-group-item">Grant Offer 1</li>
+                <li class="list-group-item">Grant Offer 1</li>
+                <li class="list-group-item">Grant Offer 1</li>
+              </ul>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+

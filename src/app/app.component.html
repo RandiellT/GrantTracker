@@ -1,3 +1,5 @@
+<!--Adapted from -->
+
 <div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-5" >
       <div class="container-fluid">
@@ -44,7 +46,7 @@
               <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdown4">Grant Management
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdown4">
-                <li><a class="dropdown-item" href="#">Submit Monthly Reports</a></li>
+                <li><a class="dropdown-item" routerLink="/submit-reports">Submit Monthly Reports</a></li>
                 <li><a class="dropdown-item" routerLink="/review-reports">Reviewed Monthly Reports</a></li>
               </ul>
             </li>
@@ -61,7 +63,6 @@
       </div>
   </nav>
 
-<app-home></app-home>
 <router-outlet></router-outlet> <!--Ensure that routes created works-->
 
 

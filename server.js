@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const config = require('./config/database');
 
-//Importing page routes (controllers)
+//Importing page routes with controllers
 const userRouter = require('./pageRoutes/userRoute');
 const loginRouter = require('./pageRoutes/loginRoute');
 const offerGrantsRouter = require('./pageRoutes/offerGrantsRoute');
@@ -97,8 +97,8 @@ app.use('/submit-reports', submitReportsRouter);
 
 //Routing for file streaming for file streaming
 app.use('/proposals', writeProposalFilesRouter);
-app.use('/proposals', submitReportsFilesRouter);
-app.use('/proposals', offerGrantsFilesRouter);
+app.use('/reports', submitReportsFilesRouter);
+app.use('/offerFile', offerGrantsFilesRouter);
 
 //Starting server on selected port
 app.listen(port, ()=>{

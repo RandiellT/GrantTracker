@@ -1,3 +1,5 @@
+//Adapted from
+
 //Importing modules expected to use
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -76,6 +78,10 @@ const appRoutes: Routes = [
     {
         path: 'access-reports',
         component: AccessReportsComponent
+    },
+    {
+        path: 'submit-reports',
+        component: SubmitReportComponent
     },
     {
         path: 'approve-proposals',

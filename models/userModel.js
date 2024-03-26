@@ -2,7 +2,7 @@
 
 //Importing packages needed
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
 
 //Creating a new schema, adding error control and validation
 const UserSchema = new mongoose.Schema({

@@ -28,8 +28,4 @@ export class ViewUserComponent {
         this.loginUser = user;
     }
 
-    // public onAddUser(newUsers!) {
-    //     this.user = this.user.concat(newUsers!);
-    // }
-
 }
