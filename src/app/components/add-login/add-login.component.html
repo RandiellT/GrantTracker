@@ -1,0 +1,35 @@
+<div class="p-3 mb-2"> 
+  <h1 class="text-center"> Login </h1>
+
+    <div class="mb-3 gap-2 col-6 mx-auto">
+        <label for="inputUsertype" class="form-label">User Type</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option2" checked>
+        <label class="form-check-label" for="gridRadios1">General</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1">
+        <label class="form-check-label" for="gridRadios2">Funder</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+        <label class="form-check-label" for="gridRadios3">Admin</label>
+        </div>
+    </div>
+
+  <div class="mb-3 gap-2 col-6 mx-auto">
+    <label for="inputUsername" class="form-label">Username</label>
+    <input type="username" class="form-control" id="inputUsername" placeholder="Enter username">
+  </div>
+
+  <div class="mb-3 gap-2 col-6 mx-auto">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword" placeholder="Enter password">
+  </div>
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button type="submit" class="btn btn-primary mb-3" routerLink="/user">Confirm Account Information</button>
+</div>
