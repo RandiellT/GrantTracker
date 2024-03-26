@@ -1,6 +1,6 @@
 //Importing the user model and controller
 const userModel= require('../models/userModel');
-const userController= require('../controllers/userController');
+//const userController= require('../controllers/userController');
     
 //Routing using express
 let router = require("express").Router();
@@ -10,6 +10,9 @@ let router = require("express").Router();
 //Creation of post method router
 
 router.post('/post', async (req, res) => {
+
+    //record.password=record.hashPassword(userModel.password);
+
     const data = new userModel({
         userType: req.body.userType,
         username: req.body.username,
@@ -32,7 +35,7 @@ router.post('/post', async (req, res) => {
 
 router.get('/getAll', async (req, res) => {
     try{
-        const data = await User.find();
+        const data = await userModel.find();
         res.json(data)
     }
     catch(error){

@@ -6,8 +6,7 @@ const { upload } = require("../controllers/writeProposalFilesController");
 //Routing using express
 let router = require("express").Router();
 
-
-// Uploading a multiple file
+// Uploading a multiple files
 router.post("/upload/files", upload().array("files"), async (req, res) => {
     try {
       res.status(201).json({ text: "Files uploaded successfully !" });
@@ -18,7 +17,6 @@ router.post("/upload/files", upload().array("files"), async (req, res) => {
       });
     }
 });
-
 
 // Downloading a file by id
 router.get("/download/files/:fileId", async (req, res) => {

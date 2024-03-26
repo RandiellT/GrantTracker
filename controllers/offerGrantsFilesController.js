@@ -1,9 +1,10 @@
-//const mongoose = require('mongoose');
-//const config = require('./config/database');
+//Taken from 
+
+//Importing packages needed
 const multer = require('multer');
 const { GridFsStorage } = require('multer-gridfs-storage');
 
-// Create storage engine
+// Create storage engine for the bucket in MongoDB
 function upload() {
   const mongodbUrl= `mongodb+srv://randiellt:english123@cluster0.ni8ty3s.mongodb.net/GrantTracker?retryWrites=true&w=majority`;
   const storage = new GridFsStorage({
@@ -12,7 +13,7 @@ function upload() {
       return new Promise((resolve, _reject) => {
         const fileInfo = {
           filename: file.originalname,
-          bucketName: "filesBucket",
+          bucketName: "offerGrants",
         };
         resolve(fileInfo);
       });
@@ -22,4 +23,5 @@ function upload() {
   return multer({ storage });
 }
 
+//Exporting upload function
 module.exports = { upload };

@@ -1,6 +1,10 @@
+//Adapted from 
+
+//Importing packages needed
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
+//Creating a new schema, adding error control and validation
 const UserSchema = new mongoose.Schema({
 
     userType: {
@@ -42,13 +46,16 @@ const UserSchema = new mongoose.Schema({
 
 });
 
-UserSchema.methods.hashPassword = function (password) {
-    return bcrypt.hashSync(password, bcrypt.genSaltSync(10))
-}
-UserSchema.methods.comparePassword = function (password, hash) {
-    return bcrypt.compareSync(password, hash)
-}
+//Adapted from 
+//Hashing passwords for users protection
+// UserSchema.methods.hashPassword = function (password) {
+//     return bcrypt.hashSync(password, bcrypt.genSaltSync(10))
+// }
+// UserSchema.methods.comparePassword = function (password, hash) {
+//     return bcrypt.compareSync(password, hash)
+// }
 
+//Exporting model
 module.exports = mongoose.model('Users', UserSchema);
 
 

@@ -1,13 +1,13 @@
 //Taken from 
 
 //Importing the upload function
-const { upload } = require("../controllers/writeProposalFilesController");
+const { upload } = require("../controllers/submitReportFilesController");
 
 //Routing using express
 let router = require("express").Router();
 
 
-// Uploading a multiple file
+// Uploading a single file
 router.post("/upload/files", upload().array("files"), async (req, res) => {
     try {
       res.status(201).json({ text: "Files uploaded successfully !" });
@@ -44,7 +44,7 @@ router.get("/download/files/:fileId", async (req, res) => {
       console.log(error);
       res.status(400).json({error: { text: `Unable to download file`, error }});
     }
-  });
+});
 
 //Exporting router 
 module.exports = router;
