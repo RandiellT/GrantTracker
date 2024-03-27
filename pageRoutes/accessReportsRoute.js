@@ -1,3 +1,6 @@
+//Taken from Kumar (2022)
+//Only a few modications were made for this to function.
+
 //Importing the mongoose model
 const accessReportsModel= require('../models/accessReportsModel');
     
@@ -53,7 +56,7 @@ router.get('/get/:id', async (req, res) => {
 
 //Creation of update by Object ID method router
 
-router.patch('/update/:id', async (req, res) => {
+router.put('/update/:id', async (req, res) => {
     try {
         const id = req.params.id;
         const updatedData = req.body;

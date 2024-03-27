@@ -1,4 +1,4 @@
-//Taken from 
+//Taken from Ejaz (2020) and Niakaté (2023)
 
 //Importing the upload function
 const { upload } = require("../controllers/submitReportFilesController");

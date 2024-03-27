@@ -1,3 +1,6 @@
+//Taken from Kumar (2022)
+//Only a few modications were made for this to function.
+
 //Importing the user model and controller
 const userModel= require('../models/userModel');
 //const userController= require('../controllers/userController');

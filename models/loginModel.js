@@ -1,4 +1,9 @@
+//Adapted from Mongoose (n.d.)
+
+//Importing package
 const mongoose = require('mongoose');
+
+//Creating Schema using Mongoose
 
 const LoginSchema = new mongoose.Schema({
     
@@ -30,4 +35,5 @@ const LoginSchema = new mongoose.Schema({
     },
 });
 
+//Exporting Model
 module.exports = mongoose.model('Login', LoginSchema);

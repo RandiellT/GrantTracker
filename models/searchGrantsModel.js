@@ -1,3 +1,5 @@
+//Adapted from Mongoose (n.d.)
+
 //Importing mongoose 
 const mongoose = require('mongoose');
 
@@ -7,7 +9,6 @@ const searchGrantsSchema = new mongoose.Schema({
 
 	grantOffers: {
 		type: Object,
-        ref:"grantOfferID",
 		required: [true, 'There are no results in this search.']
 	},
 

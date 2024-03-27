@@ -1,12 +1,15 @@
-//Adapted from 
+//Adapted from Express (n.d.) --> Application creation was done using Express
+//Adapted from Node.js (n.d.) 
+//Adapted from NPM (n.d.) -->All packages were generated using this package manager including Angular CLI
+//Adapted from Jensen (2018)
 
 //Importing the packages needed for the server to function
-const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const config = require('./config/database');
+const express = require('express'); //A node module, used for routing 
+const path = require('path'); //
+const bodyParser = require('body-parser'); //Allows middleware creation
+const mongoose = require('mongoose'); //Enables connection of the data schema
+const cors = require('cors'); //Enables listening of the server using Express
+const config = require('./config/database');  //MongoDB connection string is located here
 
 //Importing page routes with controllers
 const userRouter = require('./pageRoutes/userRoute');
@@ -27,8 +30,8 @@ const writeProposalFilesRouter = require('./pageRoutes/writeProposalFilesRoute')
 const offerGrantsFilesRouter = require('./pageRoutes/offerGrantsFilesRoute');
 const submitReportsFilesRouter = require('./pageRoutes/submitReportFilesRoute');
 
+//Adapted from Jensen (2018) and 
 //Connecting mongodb and mongoose
-
 mongoose.connect(config.database);
 const connectionDB = mongoose.connection
 	
@@ -39,7 +42,9 @@ connectionDB.on('error', (error) => {
 connectionDB.once('connected', () => {
     console.log('MongoDB connection successful!');
 
-//connection for file streaming
+//Taken from Niakaté (2023)
+//Adapted from MongoDB (n.d.)
+//Connection for file streaming using GridFS
     let bucket1;
     let bucket2;
     let bucket3;

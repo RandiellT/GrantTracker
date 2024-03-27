@@ -1,3 +1,7 @@
+//Taken from Jensen (2018)
+//Taken from Angular (n.d.)
+//Standard file convention when a component is generated for a no standlone component
+
 import { Component } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { Users } from '../../models/user';

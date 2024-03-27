@@ -1,4 +1,4 @@
-//Adapted from
+//Adapted from Angular (n.d.) and Jensen (2018)
 
 //Importing modules expected to use
 import { BrowserModule } from '@angular/platform-browser';

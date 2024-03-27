@@ -1,3 +1,5 @@
+//Taken from Jensen (2018)
+
 // const offerGrants = require ('../models/offerGrantsModel');
 
 // module.exports.getAllofferGrants = (callback) =>{

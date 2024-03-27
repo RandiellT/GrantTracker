@@ -1,4 +1,4 @@
-//Adapted from 
+//Adapted from Mongoose (n.d.)
 
 //Importing packages needed
 const mongoose = require('mongoose');
@@ -40,13 +40,12 @@ const UserSchema = new mongoose.Schema({
         max: 150
     },
     registerDate: {
-        type: Date,
-        default: Date.now(),
+        type: String,
     },
 
 });
 
-//Adapted from 
+//Adapted from Asif (2021)
 //Hashing passwords for users protection
 // UserSchema.methods.hashPassword = function (password) {
 //     return bcrypt.hashSync(password, bcrypt.genSaltSync(10))

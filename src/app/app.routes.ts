@@ -1,4 +1,4 @@
-//Adapted from
+//Adapted from Angular (n.d.)
 
 //Importing the angular router
 import { Routes } from '@angular/router';
@@ -57,6 +57,10 @@ export const routes: Routes = [
     {
         path: 'access-reports',
         component: AccessReportsComponent
+    },
+    {
+        path: 'submit-reports',
+        component: SubmitReportComponent
     },
     {
         path: 'approve-proposals',

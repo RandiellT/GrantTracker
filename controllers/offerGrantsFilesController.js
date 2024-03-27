@@ -1,4 +1,4 @@
-//Taken from 
+//Taken from Ejaz (2020) and Niakaté (2023)
 
 //Importing packages needed
 const multer = require('multer');

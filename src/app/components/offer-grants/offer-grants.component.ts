@@ -1,5 +1,9 @@
+
+//Taken from Angular (n.d.)
+//Standard file convention when a component is generated for a no standlone component
+
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-offer-grants',

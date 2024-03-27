@@ -1,3 +1,5 @@
+//Adapted from Mongoose (n.d.)
+
 //Importing mongoose 
 const mongoose = require('mongoose');
 

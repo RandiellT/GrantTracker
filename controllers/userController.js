@@ -1,3 +1,5 @@
+//Taken from Jensen (2018)
+
 // const Users = require ('../models/userModel');
 
 // module.exports.getAllUsers = (callback) =>{

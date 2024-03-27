@@ -1,12 +1,9 @@
-//
+//Taken from Jensen (2018)
+//Only a few modications were made for this to function. 
+
 import { Injectable } from '@angular/core';
-
-//
 import { HttpClient } from '@angular/common/http';
-
-//
 import { Observable } from 'rxjs';
-
 //Importing model created
 import { OfferGrants } from '../models/offerGrants';
 

@@ -1,3 +1,6 @@
+//Taken from Kumar (2022)
+//Only a few modications were made for this to function.
+
 //Importing the mongoose model
 const monitorAwardModel= require('../models/monitorAwardModel');
 

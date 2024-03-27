@@ -1,3 +1,5 @@
+//Adapted from Mongoose (n.d.)
+
 //Importing mongoose 
 const mongoose = require('mongoose');
 
@@ -35,4 +37,5 @@ const offerGrantsSchema = new mongoose.Schema({
     }
 });
 
+//Exporting model
 module.exports = mongoose.model('offer.grants', offerGrantsSchema);
